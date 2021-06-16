@@ -3,8 +3,10 @@ import './style.css';
 import Fieldset from './Fieldset';
 
 const Form = () => (
-  <Fieldset>
-  </Fieldset>
+  <form className="form">
+    <Fieldset>
+    </Fieldset>
+  </form>
 );
 
 export default Form;

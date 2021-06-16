@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import Input from './Input';
 
 const Fieldset = () => (
     <fieldset class="form__fieldset">
@@ -7,7 +8,7 @@ const Fieldset = () => (
         <p>
             <label>
                 <span class="form__label">Wprowadź kwotę (PLN):</span>
-                <input class="form__field js-pln" type="number" name="pln" step="any" min="0" required />
+                <Input />
             </label>
         </p>
         <p>
