@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import Container from './Container';
 import Form from './Form';
 import Paragraph from './Paragraph';
