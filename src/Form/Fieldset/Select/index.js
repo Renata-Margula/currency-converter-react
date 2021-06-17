@@ -1,12 +1,15 @@
 import React from 'react';
 import './style.css';
 
-const Select = () => (
-    <select className="form__field" name="currencyType">
-        <option value="EUR">EUR (euro)</option>
-        <option value="GBP">GBP (funt szterling)</option>
-        <option value="HUF">HUF (forint (Węgry))</option>
-        <option value="RON">RON (lej rumuński)</option>
+const Select = ({ currencies, currency, setCurrency }) => (
+    <select className="form__field" required
+        onChange={({ target }) => setCurrency(target.value)}
+        value={currency}>
+        {currencies.map(currency => (
+            <option key={currency.id} value={currency.id}>
+                {currency.name}
+            </option>
+        ))}
     </select>
 );
 

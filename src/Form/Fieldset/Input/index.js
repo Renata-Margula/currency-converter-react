@@ -1,8 +1,10 @@
 import React from 'react';
 import './style.css';
 
-const Input = () => (
+const Input = ({amount, setAmount}) => (
     <input 
+    value={amount}
+    onChange={({target}) => setAmount(target.value)}
     className="form__field" 
     type="number" 
     name="pln" 
