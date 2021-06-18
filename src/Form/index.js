@@ -13,7 +13,7 @@ const Form = () => {
   const calculateResult = (currency, amount) => {
     const rateAmount = currencies.find(({ id }) => id === currency).rate;
     setResult({
-      totalResult: (amount / rateAmount).toFixed(2),
+      totalResult: (amount / rateAmount),
       currency,
     });
   };
