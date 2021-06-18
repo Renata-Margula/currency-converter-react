@@ -1,8 +1,10 @@
 import './style.css';
 
 const Footer = ({ text }) => (
-    <footer className="footer">
-        {text}
-    </footer>
+    <p>
+        <footer className="footer">
+            {text}
+        </footer>
+    </p>
 );
 export default Footer;
