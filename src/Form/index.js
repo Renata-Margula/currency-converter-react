@@ -5,6 +5,7 @@ import Button from './Button';
 import Result from './Result';
 import { useState } from 'react';
 import currencies from '../currencies';
+
 const Form = () => {
   const [amount, setAmount] = useState('');
   const [result, setResult] = useState([]);
@@ -16,10 +17,13 @@ const Form = () => {
       currency,
     });
   };
+
   const onFormSubmit = event => {
     event.preventDefault();
+    setAmount("");
     calculateResult(currency, amount);
   };
+
   return (
     <form className="form" onSubmit={onFormSubmit}>
       <fieldset className="form__fieldset">
@@ -44,7 +48,9 @@ const Form = () => {
         </p>
         <Button />
         <span className="form__label">Twoja kwota:
-          <Result result={result} />
+          <p className="form__paragraph">
+            <Result result={result} />
+          </p>
         </span>
       </fieldset>
     </form>
