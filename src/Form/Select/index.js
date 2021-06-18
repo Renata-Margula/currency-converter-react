@@ -1,8 +1,8 @@
-import React from 'react';
 import './style.css';
 
 const Select = ({ currencies, currency, setCurrency }) => (
-    <select className="form__field" required
+    <select
+        className="form__field"
         onChange={({ target }) => setCurrency(target.value)}
         value={currency}>
         {currencies.map(currency => (
@@ -12,5 +12,4 @@ const Select = ({ currencies, currency, setCurrency }) => (
         ))}
     </select>
 );
-
 export default Select;
