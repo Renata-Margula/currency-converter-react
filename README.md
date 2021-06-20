@@ -1,4 +1,4 @@
-# ["TWÓJ KANTOR"](https://shadoo1.github.io/currency-converter-react/)
+# ["TWÓJ KANTOR"](https://renata-margula.github.io/currency-converter-react/)
 ## Table of contents:
 - [Info](#info)
 - [Technologies](#technologies)
