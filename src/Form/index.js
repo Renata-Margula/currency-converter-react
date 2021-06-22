@@ -3,6 +3,7 @@ import Input from './Input';
 import Select from './Select';
 import Button from './Button';
 import Result from './Result';
+import Clock from "./Clock";
 import { useState } from 'react';
 import currencies from '../currencies';
 
@@ -53,6 +54,7 @@ const Form = () => {
           </p>
         </span>
       </fieldset>
+      <Clock />
     </form>
   );
 };

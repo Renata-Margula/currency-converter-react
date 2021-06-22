@@ -1,0 +1,10 @@
+.form__clock {
+    display: flex;
+    float: right;
+}
+
+.form__clock--date {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: black;
+    font-size: smaller;
+}
