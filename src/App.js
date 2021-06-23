@@ -7,7 +7,7 @@ function App() {
     <Container>
       <Form />
       <Footer
-        text='*Kurs z dnia 22.04.2021- według danych z Narodowego Banku Polskiego "Tabela nr 077/A/NBP/2021'
+        text='*Kurs z dnia 22.04.2021- według danych z Narodowego Banku Polskiego "Tabela nr 077/A/NBP/2021"'
       />
     </Container>
   );
