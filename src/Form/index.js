@@ -14,6 +14,7 @@ const Form = () => {
   const calculateResult = (currency, amount) => {
     const rateAmount = currencies.find(({ id }) => id === currency).rate;
     setResult({
+      basicAmount: +amount,
       totalResult: (amount / rateAmount),
       currency,
     });
