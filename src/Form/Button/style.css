@@ -13,3 +13,7 @@
   border: 1px solid #3ac162;
   width: 100%;
 }
+
+.form__button:hover {
+  cursor: pointer;
+}
