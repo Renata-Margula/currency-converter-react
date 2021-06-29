@@ -1,9 +1,18 @@
 .form__clock {
-    float:right;
+  float: right;
 }
 
 .form__clock--date {
-    font-family: 'Open Sans Condensed', sans-serif;
-    color: black;
-    font-weight: 600;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+  font-weight: 600;
+  font-size: smaller;
+}
+
+@media (max-width: 767px) {
+  .form__clock--date {
+    display: grid;
+    grid-template-columns: auto;
+    word-break: break-all;
+  }
 }

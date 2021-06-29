@@ -1,3 +1,11 @@
 .form__result {
   color: #4bc970;
 }
+
+@media (max-width: 767px) {
+  .form__result {
+    display: grid;
+    grid-template-columns: auto;
+    word-break: break-all;
+  }
+}
