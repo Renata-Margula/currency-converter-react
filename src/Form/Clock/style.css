@@ -3,9 +3,8 @@
 }
 
 .form__clock--date {
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Source Code Pro', monospace;
   color: black;
-  font-weight: 600;
   font-size: smaller;
 }
 
