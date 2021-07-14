@@ -1,8 +1,8 @@
-import './style.css';
+import { StyledButton } from "./styled";
 
 const Button = () => (
-    <button className="form__button">Przelicz kwotę!
-    </button>
+    <StyledButton>Przelicz kwotę!
+    </StyledButton>
 );
 
 export default Button;
