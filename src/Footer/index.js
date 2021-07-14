@@ -1,10 +1,8 @@
-import './style.css';
+import { StyledFooter } from "./styled";
 
 const Footer = ({ text }) => (
-    <p>
-        <footer className="footer">
-            {text}
-        </footer>
-    </p>
+    <StyledFooter>
+        {text}
+    </StyledFooter>
 );
 export default Footer;
