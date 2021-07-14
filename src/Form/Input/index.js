@@ -1,10 +1,9 @@
-import './style.css';
+import { StyledInput } from "./styled";
 
 const Input = ({ amount, setAmount }) => (
-    <input
+    <StyledInput
         value={amount}
         onChange={({ target }) => setAmount(target.value)}
-        className="form__field"
         type="number"
         name="pln"
         step="any"
