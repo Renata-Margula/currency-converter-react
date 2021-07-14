@@ -1,8 +1,7 @@
-import './style.css';
+import { StyledSelect } from "./styled";
 
 const Select = ({ currencies, currency, setCurrency }) => (
-    <select
-        className="form__field"
+    <StyledSelect
         onChange={({ target }) => setCurrency(target.value)}
         value={currency}>
         {currencies.map(currency => (
@@ -10,6 +9,6 @@ const Select = ({ currencies, currency, setCurrency }) => (
                 {currency.name}
             </option>
         ))}
-    </select>
+    </StyledSelect>
 );
 export default Select;
