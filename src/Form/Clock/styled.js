@@ -9,7 +9,7 @@ export const StyledClock = styled.div`
     @media (max-width: 767px) {
         display: grid;
         grid-template-columns: auto;
-        word-break: break-all;
+        word-break: keep-all;
         text-align: center;
   }
 `;
