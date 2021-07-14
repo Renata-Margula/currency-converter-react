@@ -1,4 +1,3 @@
-import './style.css';
 import Input from './Input';
 import Select from './Select';
 import Button from './Button';
@@ -6,6 +5,7 @@ import Result from './Result';
 import Clock from "./Clock";
 import { useState } from 'react';
 import currencies from '../currencies';
+import { StyledForm, Fieldset, Paragraph, Label, Legend } from "./styled";
 
 const Form = () => {
   const [amount, setAmount] = useState('');
@@ -27,12 +27,12 @@ const Form = () => {
   };
 
   return (
-    <form className="form" onSubmit={onFormSubmit}>
-      <fieldset className="form__fieldset">
-        <legend className="form__legend">TWÓJ KANTOR</legend>
+    <StyledForm onSubmit={onFormSubmit}>
+      <Fieldset>
+        <Legend>TWÓJ KANTOR</Legend>
         <p>
           <label>
-            <span className="form__label">Wprowadź kwotę (PLN):</span>
+            <Label>Wprowadź kwotę (PLN):</Label>
             <Input
               amount={amount}
               setAmount={setAmount}
@@ -41,7 +41,7 @@ const Form = () => {
         </p>
         <p>
           <label>
-            <span className="form__label">Wybierz walutę*:</span>
+            <Label>Wybierz walutę*:</Label>
             <Select
               currencies={currencies}
               currency={currency}
@@ -49,14 +49,14 @@ const Form = () => {
           </label>
         </p>
         <Button />
-        <span className="form__label">Twoja kwota:
-          <p className="form__paragraph">
+        <Label>Twoja kwota:
+          <Paragraph>
             <Result result={result} />
-          </p>
-        </span>
-      </fieldset>
+          </Paragraph>
+        </Label>
+      </Fieldset>
       <Clock />
-    </form>
+    </StyledForm>
   );
 };
 export default Form;
