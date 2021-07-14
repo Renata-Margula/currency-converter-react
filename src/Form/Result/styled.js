@@ -6,6 +6,6 @@ export const StyledResult = styled.strong`
     @media (max-width: 767px) {
         display: grid;
         grid-template-columns: auto;
-        word-break: break-all;
+        word-break: break-word;
     }
 `;
