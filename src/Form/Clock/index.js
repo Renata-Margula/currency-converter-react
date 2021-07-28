@@ -3,12 +3,12 @@ import { StyledClock } from './styled';
 
 const Clock = () => {
     const {
-        dateFormat,
+        formattedDate,
     } = useCurrentDate();
 
     return (
         <StyledClock>
-            Dzisiaj jest {dateFormat}
+            Dzisiaj jest {formattedDate}
         </StyledClock>
     );
 };
